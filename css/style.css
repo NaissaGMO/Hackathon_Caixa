@@ -1,0 +1,110 @@
+body {
+    margin: 0%;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.box1 {
+    background-color: white;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    background-color: #5c1079;
+    width: 65%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3%;
+}
+
+a {
+    margin-right: 5%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #f3e2cf;
+}
+
+img {
+    float: left;
+    padding: 5px;
+    height: 60%;
+}
+
+
+form {
+    margin-left: 7%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    position: absolute;              
+    top: 50%;                         
+    transform: translate(0, -50%); 
+}
+
+header {
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 7%;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+    color: #FFF;
+    font-size: 20px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelinput, 
+.inputUser:valid ~ .labelinput {
+    top: -20px;
+    font-size: 14px;
+    color: white;
+}
+
+#submit, #button {
+    background-color: white;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: #5c1079;
+    font-size: 15;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 3%;
+}
+
+#submit:hover, #button:hover {
+    background-color: rgb(236, 229, 229);
+}
